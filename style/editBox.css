@@ -1,0 +1,79 @@
+.editBox {
+    position: relative;
+    width: 380px;
+    height: 70px;
+    background-color: #ffffff;
+    border: solid 1px #799ebe;
+    left: 10%;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.editBox--circle {
+    border: solid 1px #799ebe;
+    width: 18px;
+    height: 18px;
+    border-radius: 20px;
+    background-color: white;
+}
+.editBox--circleLeft {
+    position: relative;
+    transform: translateX(-50%)translateY(-50%);
+    top: 50%;
+}
+.editBox--dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 20px;
+    position: relative;
+    transform: translateX(-50%)translateY(-50%);
+    top: 50%;
+    left: 50%;
+    background-color: black;
+}
+.editBox--circleRight {
+    position: relative;
+    bottom: -9%;
+    float: right;
+    right: -9px;
+}
+.editBox--textGroup {
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    left: 50%;
+    transform: translateX(-48%);
+    top: -5px;
+    width: 92%;
+}
+.editBox--c1 {
+    font-size: 22px;
+    color: #0070ce;
+    font-weight: regular;
+}
+.editBox--colon {
+    font-size: 22px;
+    color: #91a2b0
+}
+.editBox--sma {
+    font-size: 22px;
+    color: #556573;
+    background-color: #eeeff1;
+    padding-top: 21px;
+    font-weight: regular;
+    padding-bottom: 20px;
+}
+.editBox--sign {
+    font-size: 30px;
+    color: #01a9c7;
+    margin-right: 14px;
+    margin-left: 12px;
+}
+.editBox--kghm {
+    font-size: 22px;
+    font-weight: regular;
+    color: #c88452;
+}
+.editBox--trade {
+    font-size: 22px;
+    font-weight: regular;
+    color: #556573;
+}

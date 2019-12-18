@@ -1,0 +1,174 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    font-family: 'Cabin', sans-serif;
+    width: 856px;
+    height: 426px;
+    background-color: #ffffff;
+    color: #556573;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    max-width: 80%;
+  }
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    float: right;
+    top: -30px;
+    position: relative;
+    right: -65px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
+    background-color: #f3f6f8;
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+ .tickerManager {
+    position: relative;
+    user-select: none;
+    font-family: 'Cabin', sans-serif;
+    background-color: #ffffff;
+    top: 20px;
+    left: 20%;
+  }
+  .tickerManager--cursor {
+    cursor: pointer;
+  }
+ .tickerManager--groupBox {
+    width: 720px;
+    justify-content: center;
+    position: relative;
+    left: 46px;
+    top: 50px;
+  
+ }
+ .tickerManager--title {
+    font-weight: bold;
+    font-size: 19px;
+    width: 282px;
+    border-bottom: solid 1px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+ }
+ .tickerManager--groupOption {
+    width: 639px;
+    margin-top: 42px;
+    position: relative;
+    left: 72px;
+ }
+ .tickerManager--option {
+     font-size: 13px;
+     font-weight: bold;
+     color: #a5b0b9;
+ }
+ .tickerManager--add {
+     margin-left: 20px;
+     margin-right: 14px;
+ }
+ .tickerManager--addButton {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 20px;
+    right: 38px;
+    position: relative;
+ }
+ .tickerManager--inputAdd {
+     width: 277px;
+     height: 38px;
+     border-radius: 5px;
+     background-color: #f3f8fc;
+     border: solid 1px #82868a;
+ }
+ .tickerManager--delete {
+     position: relative;
+     top: 22px;
+ }
+ .tickerManager--list {
+     display: flex;
+     width: 582px;
+     left: 73px;
+     top: -19px;
+    position: relative;
+ }
+ .tickerManager--newTicker {
+     list-style: none;
+     float: left;
+     margin-right: -10px;
+ }
+ .tickerManager--search {
+     background-image: url('style/search.svg');
+     background-repeat: no-repeat;
+     width: 10px;
+     height: 10px;
+ }
+
+ .exit {
+    width: 166px;
+    padding: 5px;
+    background-color: #f3f8fc;
+    border: solid 1px #82868a;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .exit--color {
+    color: #7d838a;
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: solid 4px;
+    margin-top: 2px;
+  }
+  .exit-button {
+    color: #ed1414;
+    float: right;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    right: 26px;
+    top: 3px;
+  }
+  .exit--title {
+      text-transform: uppercase;
+      float: left;
+      color: #556573;
+      font-weight: bold;
+      font-size: 12px;
+  }

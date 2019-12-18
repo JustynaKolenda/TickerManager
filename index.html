@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modal</title>
+  <link href="style/tickerManager.css" rel="stylesheet">
+  <link href="style/editBox.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="js/tickerManagerShow.js"></script>
+  <script defer src="js/tickerOptions.js"></script>
+  <script defer src="js/tickers.js"></script>
+  <script defer src="js/tickerShow.js"></script>
+  <script defer src="js/newTicker.js"></script>
+</head>
+<body> 
+  <button data-modal-target="#modal">Ticker Manager</button>
+  <div class="modal" id="modal">
+    <div class="tickerManager--groupBox"> 
+        <button data-close-button class="close-button">&times;</button>
+        <div class="tickerManager--title">Ticker Manager</div>
+                <div class="tickerManager--groupOption">
+                    <section class="tickerManager--form">
+                       <form>
+                            <span class="tickerManager--option tickerManager--add">ADD TICKER:</span>
+                            <input type="text" class="tickerManager--inputAdd"/>
+                            <button type="submit" class="tickerManager--addButton"><i class="fa fa-search tickerManager--cursor"></i></button>
+                        </form>
+                    </section>
+                    <section>
+                        <span class="tickerManager--option tickerManager--delete">DELETE TICKER:</span>
+                        <section class="tickerManager--list">
+                            <ul></ul>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+  </div>
+  <section>
+      <div class="editBox">
+          <div class="editBox--circle editBox--circleLeft "><div class="editBox--dot"></div></div>
+          <div class="editBox--circle editBox--circleRight"><div class="editBox--dot"></div></div>
+          <div class="editBox--textGroup">
+            <span class="editBox--c1">c1</span>
+            <span class="editBox--colon">:</span>
+            <span class="editBox--sma">SMA(20)</span>
+            <span class="editBox--sign">&gt;</span>
+            <span class="editBox--kghm">KGHM</span>
+            <span class="editBox--colon">:</span>
+            <span class="editBox--trade">tradePrice</span>
+          </div>
+         
+      </div>
+  </section>
+  <div id="overlay"></div>
+</body> 
+</html>
